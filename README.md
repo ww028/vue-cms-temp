@@ -1,6 +1,6 @@
-# vue-cms-temp
+# vue 后台管理系统
 
-> A Vue.js project
+> 使用vue-cli 搭建的后台管理系统
 
 ## Build Setup
 
