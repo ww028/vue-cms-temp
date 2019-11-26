@@ -16,7 +16,12 @@ export default {
   components: {
     Header,
     Aside
-  }
+  },
+
+  data() {
+    return {
+    };
+  },
 };
 </script>
 
