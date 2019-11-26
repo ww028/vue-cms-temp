@@ -1,3 +1,3 @@
 <template>
-  <header>toubu</header>
+  <header>toubu </header>
 </template>
