@@ -38,7 +38,8 @@ export default {
       aside_active: "/home",
       aside_data: [
         { label: "主页", route: "/home" },
-        { label: "拖动排序的表格", route: "/sortTable" }
+        { label: "拖动排序的表格", route: "/sortTable" },
+        { label: "表单", route: "/editForm" },
       ]
     };
   },
