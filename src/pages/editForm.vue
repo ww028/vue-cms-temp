@@ -10,16 +10,12 @@
       style="width: 800px"
     >
       <el-row>
-        <el-col :span="8">
+        <el-col :span="10">
           <el-form-item label="年龄" prop="age">
             <el-input v-model.number="ruleForm.age"></el-input>
           </el-form-item>
         </el-col>
-        <el-col :span="8">
-          <el-form-item label="年龄" prop="age">
-            <el-input v-model.number="ruleForm.age"></el-input>
-          </el-form-item>
-        </el-col>
+        <el-col :span="10"></el-col>
       </el-row>
 
       <el-form-item>
@@ -31,6 +27,7 @@
 </template>
 
 <script>
+import { checkNum } from "@/utils/validator";
 export default {
   name: "editForm",
 
@@ -51,34 +48,11 @@ export default {
         }
       }, 1000);
     };
-    var validatePass = (rule, value, callback) => {
-      if (value === "") {
-        callback(new Error("请输入密码"));
-      } else {
-        if (this.ruleForm.checkPass !== "") {
-          this.$refs.ruleForm.validateField("checkPass");
-        }
-        callback();
-      }
-    };
-    var validatePass2 = (rule, value, callback) => {
-      if (value === "") {
-        callback(new Error("请再次输入密码"));
-      } else if (value !== this.ruleForm.pass) {
-        callback(new Error("两次输入密码不一致!"));
-      } else {
-        callback();
-      }
-    };
     return {
       ruleForm: {
-        pass: "",
-        checkPass: "",
         age: ""
       },
       rules: {
-        pass: [{ validator: validatePass, trigger: "blur" }],
-        checkPass: [{ validator: validatePass2, trigger: "blur" }],
         age: [{ validator: checkAge, trigger: "blur" }]
       }
     };
