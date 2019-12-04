@@ -1,39 +1,41 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-/* Layout */
-import Layout from '@/layout'
+const login = () => import('@/login.vue')
+const index = () => import('@/index.vue')
+const home = () => import('@/pages/home.vue')
+const sortTable = () => import('@/pages/sortTable.vue')
+const editForm = () => import('@/pages/editForm.vue')
 
-export const constantRoutes = [
-  {
-    path: '/login',
-    component: () => import('@/pages/login/index'),
-    hidden: true
-  },
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/home',
-    children: [{
-      path: 'home',
-      name: 'Home',
-      component: () => import('@/views/home'),
-      meta: { title: 'Home', icon: 'dashboard' }
-    }]
-  },
-]
+Vue.use(Router)
 
-const createRouter = () => new Router({
-  // mode: 'history', // require service support
-  scrollBehavior: () => ({ y: 0 }),
-  routes: constantRoutes
+export default new Router({
+  routes: [{
+      path: '/',
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: index,
+      redirect: "/home",
+      children: [{
+          path: '/home',
+          name: 'home',
+          component: home
+        },
+        {
+          path: '/sortTable',
+          name: 'sortTable',
+          component: sortTable
+        },
+        {
+          path: '/editForm',
+          name: 'editForm',
+          component: editForm
+        }
+      ]
+    }
+  ]
 })
-
-const router = createRouter()
-
-export function resetRouter() {
-  const newRouter = createRouter()
-  router.matcher = newRouter.matcher // reset router
-}
-
-export default router

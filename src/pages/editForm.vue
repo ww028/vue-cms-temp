@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import { checkNum } from "@/utils/validator";
 export default {
   name: "editForm",
 
