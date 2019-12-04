@@ -8,11 +8,7 @@
       :collapse="false"
     >
       <template v-for="item in aside_data">
-        <el-submenu
-          v-if="item.children"
-          :index="item.route"
-          :key="item.route"
-        >
+        <el-submenu v-if="item.children" :index="item.route" :key="item.route">
           <template slot="title">
             {{ item.label }}
           </template>
@@ -37,18 +33,23 @@
 <script>
 export default {
   name: "Aside",
-  data(){
-    return{
-      aside_active: '/home',
+  data() {
+    return {
+      aside_active: "/home",
       aside_data: [
-        {label: '主页', route: '/home'},
-        {label: '拖动排序的表格', route: '/sortTable'},
+        { label: "主页", route: "/home" },
+        { label: "拖动排序的表格", route: "/sortTable" },
+        { label: "表单", route: "/editForm" },
       ]
-    }
+    };
+  },
+
+  mounted() {
+    this.aside_active = this.$route.fullPath
   },
 
   methods: {
-    handleSelect(){}
+    handleSelect() {}
   }
 };
 </script>
