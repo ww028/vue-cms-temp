@@ -1,5 +1,5 @@
 <template>
-  <div>可拖动的表格</div>
+  <main>可拖动的表格</main>
 </template>
 
 <script>
