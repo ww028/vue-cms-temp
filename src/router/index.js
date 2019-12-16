@@ -10,6 +10,7 @@ export const constantRoutes = [
   {
     path: '/login',
     component: () => import('@/pages/login/login'),
+    hidden: true
   },
 
   {
