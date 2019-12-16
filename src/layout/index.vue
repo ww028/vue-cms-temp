@@ -1,24 +1,21 @@
 <template>
   <div>
+    <sidebar class="sidebar-container" />
     <div>
       <navbar />
     </div>
-    <app-main />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import { Navbar, AppMain } from './components'
-import ResizeMixin from './mixin/ResizeHandler'
+import { Navbar, Sidebar } from './components'
 
 export default {
   name: 'Layout',
   components: {
     Navbar,
-    AppMain
+    Sidebar
   },
-  
-  methods: {
-  }
 }
 </script>
