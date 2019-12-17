@@ -12,7 +12,6 @@ export const constantRoutes = [
     component: () => import('@/pages/login/login'),
     hidden: true
   },
-
   {
     path: '/',
     component: Layout,
@@ -24,6 +23,27 @@ export const constantRoutes = [
       meta: { title: 'Home'}
     }]
   },
+  {
+    path: '/example',
+    component: Layout,
+    redirect: '/example/form',
+    name: 'Example',
+    meta: { title: 'Example' },
+    children: [
+      {
+        path: 'form',
+        name: 'Form',
+        component: () => import('@/pages/editForm'),
+        meta: { title: 'Form' }
+      },
+      {
+        path: 'sortTable',
+        name: 'SortTable',
+        component: () => import('@/pages/sortTable'),
+        meta: { title: 'SortTable' }
+      }
+    ]
+  }
 ]
 
 const createRouter = () => new Router({

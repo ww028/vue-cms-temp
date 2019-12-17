@@ -1,14 +1,10 @@
 <template>
   <div>
-    sideBar
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         :default-active="activeMenu"
         :collapse="false"
-        background-color="#000"
-        text-color="#fff"
         :unique-opened="false"
-        active-text-color="#f00"
         :collapse-transition="false"
         mode="vertical"
       >
