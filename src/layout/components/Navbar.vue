@@ -3,7 +3,7 @@
     <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
-      <el-button @click="logout">退出</el-button>
+      <el-button @click="logout" size="mini">退出</el-button>
     </div>
   </div>
 </template>
@@ -29,3 +29,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,21,41,0.08);
+}
+</style>

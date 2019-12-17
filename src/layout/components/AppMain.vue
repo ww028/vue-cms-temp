@@ -16,3 +16,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.app-main{
+  padding: 20px;
+}
+</style>

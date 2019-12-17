@@ -11,6 +11,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(ElementUI);
 
+import '@/style/index.scss' // global css
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

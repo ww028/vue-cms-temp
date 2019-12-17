@@ -1,0 +1,29 @@
+@import './tag.scss';
+@import './element-ui.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.app-wrapper {
+  height: 100%;
+}
+
+.app-wrapper {
+  display: flex;
+
+  .sidebar-container {
+    width: 220px;
+    border-right: solid 1px #e6e6e6;
+  }
+
+  .main{
+    width: 0;
+    flex-grow: 1;
+  }
+}
