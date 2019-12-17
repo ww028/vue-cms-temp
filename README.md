@@ -9,20 +9,18 @@
 
 
 
-## master 分支
-## [master](https://github.com/ww028/vue-cms-temp)
+## master 分支 [戳我](https://github.com/ww028/vue-cms-temp)
 > 现有最新稳定版本
 
 ## dev 分支 
 > 现在正在开发的版本
 
-## dev-1 分支
+## dev-1 分支 [戳我](https://github.com/ww028/vue-cms-temp/tree/dev-1)
 > 没有任何样式，是可以使用的最基础的版本
 - 后续会为这个版本写一个文档，以便没有基础也可以看得懂
 
-
-## dev-2 分支
-- 添加整体布局样式，路由切换动效 待开发
+## dev-2 分支 [戳我](https://github.com/ww028/vue-cms-temp/tree/dev-2)
+- 添加整体布局样式，路由切换动效
 - 我发现这个版本好像也没啥写的。。先这样吧
 
 ## dev-3 分支
