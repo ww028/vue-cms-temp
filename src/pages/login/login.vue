@@ -10,7 +10,7 @@ export default {
   methods: {
     login() {
       setTimeout(() => {
-        setToken("vue_admin_template_token");
+        setToken("my_token");
         this.$router.push({ path: this.redirect || "/" });
       });
     }

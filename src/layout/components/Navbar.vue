@@ -1,12 +1,18 @@
 <template>
   <div class="navbar">
     <breadcrumb class="breadcrumb-container" />
+
+    <div class="right-menu">
+      <el-button @click="logout">退出</el-button>
+    </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
+import { resetRouter } from '@/router'
+import { removeToken } from '@/utils/auth'
 
 export default {
   components: {
@@ -14,12 +20,11 @@ export default {
   },
  
   methods: {
-    toggleSideBar() {
-      this.$store.dispatch('app/toggleSideBar')
-    },
-    async logout() {
-      await this.$store.dispatch('user/logout')
-      this.$router.push(`/login?redirect=${this.$route.fullPath}`)
+    logout() {
+      removeToken()
+      resetRouter()
+      // await this.$store.dispatch('user/logout')
+      this.$router.push(`/login`)
     }
   }
 }
