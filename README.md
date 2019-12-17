@@ -7,24 +7,12 @@
 ## 为什么写这个呢
 > 因为大佬的的这个模板东西还是有点多，开箱即用的需要一点上手成本，所以我来简化一下，在保留的优秀结构之外尽量简化不必要的骚操作，但是最终肯定是要把这个模板完全理清楚的，再次感谢大佬
 
+## 分支
+- [现有最新稳定版本](https://github.com/ww028/vue-cms-temp)
+- [没有任何样式，是可以使用的最基础的版本](https://github.com/ww028/vue-cms-temp/tree/dev-1)
+- [添加整体布局样式，路由切换动效](https://github.com/ww028/vue-cms-temp/tree/dev-2)
+- [添加常用方法，如 ajax 请求，echarts表格等 待开发](https://github.com/ww028/vue-cms-temp/tree/dev-3)
 
-
-## master 分支 [戳我](https://github.com/ww028/vue-cms-temp)
-> 现有最新稳定版本
-
-## dev 分支 
-> 现在正在开发的版本
-
-## dev-1 分支 [戳我](https://github.com/ww028/vue-cms-temp/tree/dev-1)
-> 没有任何样式，是可以使用的最基础的版本
-- 后续会为这个版本写一个文档，以便没有基础也可以看得懂
-
-## dev-2 分支 [戳我](https://github.com/ww028/vue-cms-temp/tree/dev-2)
-- 添加整体布局样式，路由切换动效
-- 我发现这个版本好像也没啥写的。。先这样吧
-
-## dev-3 分支
-> 添加常用方法，如 ajax 请求，echarts表格等 待开发
 
 ## 最后再感谢一次 PanJiaChen 大佬提供的优秀模板，附上大佬链接 https://github.com/PanJiaChen
 
