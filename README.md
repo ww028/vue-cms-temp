@@ -1,6 +1,7 @@
 # vue 后台管理系统模板
 
 > 简化 PanJiaChen 大佬的后台模板，原地址在这里 https://github.com/PanJiaChen/vue-admin-template/
+> 文档地址 https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/
 > 我本来想自己写一个 基于 vue-cli 和 element UI的 管理后台的模板，留着自己新建项目的时候直接复制粘贴，当我看到这位 “花裤衩” 大佬写的模板的模板之后我放弃了，向大佬低头
 
 # 为什么写这个呢
@@ -23,6 +24,7 @@
 > 添加常用方法，如 ajax 请求，echarts表格等 待开发
 
 # 最后再感谢一次 PanJiaChen 大佬提供的优秀模板，附上大佬链接 https://github.com/PanJiaChen
+
 
 ## Build Setup
 

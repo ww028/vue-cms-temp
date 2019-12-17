@@ -4,18 +4,19 @@
     <div>
       <navbar />
     </div>
-    <router-view/>
+    <AppMain />
   </div>
 </template>
 
 <script>
-import { Navbar, Sidebar } from './components'
+import { Navbar, Sidebar, AppMain } from './components'
 
 export default {
   name: 'Layout',
   components: {
     Navbar,
-    Sidebar
+    Sidebar,
+    AppMain
   },
 }
 </script>

@@ -20,7 +20,7 @@ export const constantRoutes = [
       path: 'home',
       name: 'Home',
       component: () => import('@/pages/home/home'),
-      meta: { title: 'Home'}
+      meta: { title: '首页'}
     }]
   },
   {
@@ -34,13 +34,23 @@ export const constantRoutes = [
         path: 'form',
         name: 'Form',
         component: () => import('@/pages/editForm'),
-        meta: { title: 'Form' }
+        meta: { title: '表单' }
       },
       {
         path: 'sortTable',
         name: 'SortTable',
         component: () => import('@/pages/sortTable'),
-        meta: { title: 'SortTable' }
+        meta: { title: '表格' }
+      }
+    ]
+  },
+  {
+    path: "external-link",
+    component: Layout,
+    children: [
+      {
+        path: "https://github.com/PanJiaChen/vue-element-admin",
+        meta: { title: "外链"}
       }
     ]
   }
