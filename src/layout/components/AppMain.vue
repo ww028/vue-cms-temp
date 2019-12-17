@@ -1,6 +1,6 @@
 <template>
   <section class="app-main">
-    <transition name="fade-transform" mode="out-in">
+    <transition>
       <router-view :key="key" />
     </transition>
   </section>
@@ -20,5 +20,23 @@ export default {
 <style lang="scss" scoped>
 .app-main{
   padding: 20px;
+}
+
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.2s ease;
+}
+
+.v-move {
+  transition: all 0.8s ease;
+}
+.v-leave-active {
+  position: absolute;
 }
 </style>
