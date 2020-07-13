@@ -10,9 +10,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "element-ui": "^2.12.0",
     "node-sass": "^4.13.0",
     "path-to-regexp": "2.4.0",
+    "qs": "^6.9.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.7"
   },

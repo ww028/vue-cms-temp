@@ -40,8 +40,16 @@ export const constantRoutes = [
         path: 'sortTable',
         name: 'SortTable',
         component: () => import('@/pages/sortTable'),
-        meta: { title: '表格' }
-      }
+        meta: { title: '表格' },
+        children: [
+          {
+            path: 'sortTable',
+            name: 'SortTable',
+            component: () => import('@/pages/sortTable'),
+            meta: { title: '表格1-1' }
+          }
+        ]
+      },
     ]
   },
   {
